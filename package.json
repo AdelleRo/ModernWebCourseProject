@@ -7,6 +7,15 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:build": "npx tailwindcss -i src/tailwind.css -o src/styles.css",
+    "tailwind:run": "npx tailwindcss -i src/tailwind.css -o src/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.13"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13"
   }
 }
